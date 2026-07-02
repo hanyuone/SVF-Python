@@ -68,3 +68,11 @@ class PTAType(IntEnum):
 
     Andersen = 0        # Andersen's analysis
     Steensgaard = 1     # Steensgaard's analysis
+
+class AliasResult(IntEnum):
+    """Alias analysis results"""
+
+    NoAlias = 0
+    MayAlias = 1
+    MustAlias = 2
+    PartialAlias = 3
